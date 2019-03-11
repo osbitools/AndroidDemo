@@ -1,0 +1,7 @@
+<resources>
+    <string name="wp_name">Some facts on world population</string>
+    <string name="wp_descr">"Interesting demo facts about world population"</string>
+
+    <string name="et_name">Global air Earth temperature 1880-2014</string>
+    <string name="et_descr">Global annual-mean surface air temperature change with the base period 1951-1980</string>
+</resources>

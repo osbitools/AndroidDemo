@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.osbitools.com/xsd/wp.xsd" ver_max="1" ver_min="0" descr="Informational Dashboard for World Population Demo" inc="10" title="LX_WORLD_POPULATION_PAGE_TITLE" charset="utf-8" page_loading="LX_WORLD_POPULATION_PAGE_LOADING" copyright="2016 - IvaLab">
+	<panels>
+		<panel>
+			<wwg_cont uid="1" idx="0" class_name="com.osbitools.containers.tab_box">
+				<props>
+					<prop name="id" value="com_osbitools_containers_tab_box_1" />
+					<prop name="header_title" value="LX_WORLD_POPULATION_CHANGE" />
+					<prop name="header_icon" value="line.png" />
+				</props>
+				<wwg_list>
+					<wwg_chart uid="2" idx="0" class_name="com.osbitools.charts.jqplot.line" engine="jqplot">
+						<props>
+							<prop name="id" value="com_osbitools_charts_line_2" />
+							<prop name="size_width" value="500" />
+							<prop name="size_height" value="300" />
+							<prop name="ds" value="world_population.world_population_1950_2013" />
+							<prop name="is_animate" value="false" />
+							<prop name="x_axis" value="YEAR" />
+							<prop name="x_axis_fmt" value="%Y" />
+							<prop name="x_axis_label" value="LX_YEAR" />
+							<prop name="y_axis_fmt" value="%.1f" />
+							<prop name="is_show_point_labels" value="true" />
+							<prop name="y_axis_label" value="LX_POPULATION_BSHORT" />
+						</props>
+						<prop_groups>
+							<prop_group name="series">
+								<props>
+									<prop name="y_axis" value="POPULATION_BSHORT" />
+								</props>
+							</prop_group>
+						</prop_groups>
+					</wwg_chart>
+				</wwg_list>
+			</wwg_cont>
+			<wwg_cont uid="3" idx="1" class_name="com.osbitools.containers.tab_box">
+				<props>
+					<prop name="id" value="com_osbitools_containers_tab_box_3" />
+					<prop name="header_title" value="LX_WORLD_POPULATION_TOTAL" />
+					<prop name="header_icon" value="chart_pie.png" />
+				</props>
+				<wwg_list>
+					<wwg_chart uid="8" idx="0" class_name="com.osbitools.charts.jqplot.pie" engine="jqplot">
+						<props>
+							<prop name="id" value="com_osbitools_charts_jqplot_pie_8" />
+							<prop name="size_width" value="500" />
+							<prop name="size_height" value="300" />
+							<prop name="ds" value="world_population.world_population_2013" />
+							<prop name="x_axis" value="CONTINENT" />
+							<prop name="y_axis" value="POPULATION" />
+							<prop name="is_show_legend" value="true" />
+						</props>
+					</wwg_chart>
+				</wwg_list>
+			</wwg_cont>
+		</panel>
+		<panel>
+			<wwg_cont uid="5" idx="0" class_name="com.osbitools.containers.tab_box">
+				<props>
+					<prop name="id" value="com_osbitools_containers_tab_box_5" />
+					<prop name="header_title" value="LX_AMERICA_POPULATION" />
+					<prop name="header_icon" value="chart_hbar.png" />
+				</props>
+				<wwg_list>
+					<wwg_chart uid="7" idx="0" class_name="com.osbitools.demo.tbl_hbar">
+						<props>
+							<prop name="id" value="com_osbitools_demo_tbl_hbar_7" />
+							<prop name="size_width" value="500" />
+							<prop name="size_height" value="300" />
+							<prop name="ds" value="world_population.america_population_2013" />
+							<prop name="is_show_point_labels" value="true" />
+							<prop name="x_axis" value="REGION" />
+							<prop name="y_axis" value="POPULATION" />
+							<prop name="y_axis_fmt" value="%'d" />
+							<prop name="is_show_summary" value="true" />
+						</props>
+					</wwg_chart>
+				</wwg_list>
+			</wwg_cont>
+			<wwg_cont uid="9" idx="1" class_name="com.osbitools.containers.tab_box">
+				<props>
+					<prop name="id" value="com_osbitools_containers_tab_box_9" />
+					<prop name="header_title" value="LX_EUROPE_POPULATION" />
+					<prop name="header_icon" value="chart_vbar.png" />
+				</props>
+				<wwg_list>
+					<wwg_chart uid="10" idx="0" class_name="com.osbitools.charts.jqplot.bar" engine="jqplot">
+						<props>
+							<prop name="id" value="com_osbitools_charts_jqplot_bar_10" />
+							<prop name="size_width" value="450" />
+							<prop name="size_height" value="300" />
+							<prop name="rpad" value="3.57" />
+							<prop name="ds" value="world_population.europe_population_2013" />
+							<prop name="is_show_point_labels" value="true" />
+							<prop name="x_axis" value="REGION" />
+							<prop name="x_axis_label" value="LX_REGION" />
+							<prop name="x_axis_lbl_angle" value="15" />
+							<prop name="y_axis_fmt" value="%.1f" />
+							<prop name="y_axis_label" value="LX_POPULATION_MSHORT" />
+							<prop name="series_colors" value="4bb2c5,eaa228,c5b47f,579575,839557" />
+						</props>
+						<prop_groups>
+							<prop_group name="series">
+								<props>
+									<prop name="y_axis" value="POPULATION_MSHORT" />
+								</props>
+							</prop_group>
+						</prop_groups>
+					</wwg_chart>
+				</wwg_list>
+			</wwg_cont>
+		</panel>
+	</panels>
+</wp>

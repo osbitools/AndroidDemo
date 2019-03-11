@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ll_set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.osbitools.com/xsd/ll_set.xsd" ver_max="1" ver_min="0" lang_list="en,fr,ru">
+	<lang_label id="LX_AMERICA_POPULATION">
+		<ll_def lang="en" value="America Continent Population" />
+		<ll_def lang="fr" value="Amérique du Continent Population" />
+		<ll_def lang="ru" value="Население Континента Америки" />
+	</lang_label>
+	<lang_label id="LX_EUROPE_POPULATION">
+		<ll_def lang="en" value="Europe Continent Population" />
+		<ll_def lang="fr" value="L'Europe Continent Population" />
+		<ll_def lang="ru" value="Население Континента Европы" />
+	</lang_label>
+	<lang_label id="LX_POPULATION">
+		<ll_def lang="en" value="Population" />
+		<ll_def lang="fr" value="Population" />
+		<ll_def lang="ru" value="Население" />
+	</lang_label>
+	<lang_label id="LX_REGION">
+		<ll_def lang="en" value="Region" />
+		<ll_def lang="fr" value="Région" />
+		<ll_def lang="ru" value="Регион" />
+	</lang_label>
+	<lang_label id="LX_WORLD_POPULATION_CHANGE">
+		<ll_def lang="en" value="World Population Change" />
+		<ll_def lang="fr" value="Variation de la population mondiale" />
+		<ll_def lang="ru" value="Изменение мирового населения" />
+	</lang_label>
+	<lang_label id="LX_WORLD_POPULATION_PAGE_LOADING">
+		<ll_def lang="en" value="Loading World Population Informational Dashboard" />
+		<ll_def lang="fr" value="Chargement population mondiale Informatif Dashboard" />
+		<ll_def lang="ru" value="Загрузка Информационная таблица население мира" />
+	</lang_label>
+	<lang_label id="LX_WORLD_POPULATION_PAGE_TITLE">
+		<ll_def lang="en" value="World Population Informational Dashboard" />
+		<ll_def lang="fr" value="La population mondiale Informatif Dashboard" />
+		<ll_def lang="ru" value="Информационная таблица население мира" />
+	</lang_label>
+	<lang_label id="LX_WORLD_POPULATION_TOTAL">
+		<ll_def lang="en" value="Total World Population" />
+		<ll_def lang="fr" value="Population mondiale" />
+		<ll_def lang="ru" value="Общее население мира" />
+	</lang_label>
+	<lang_label id="LX_YEAR">
+		<ll_def lang="en" value="Year" />
+		<ll_def lang="fr" value="An" />
+		<ll_def lang="ru" value="Год" />
+	</lang_label>
+	<lang_label id="LX_POPULATION_BSHORT">
+		<ll_def lang="en" value="Population, billions" />
+		<ll_def lang="fr" value="Population, des milliards" />
+		<ll_def lang="ru" value="Население, млрд" />
+	</lang_label>
+</ll_set>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ll_set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.osbitools.com/xsd/ll_set.xsd" ver_max="1" ver_min="0" lang_list="en,fr,ru">
+
+        <lang_label id="LX_5YEAR_MEAN">
+                <ll_def lang="en" value="5 Years Mean" />
+                <ll_def lang="fr" value="5 EARS meen" />
+                <ll_def lang="ru" value="5 лет среднее" />
+        </lang_label>
+        <lang_label id="LX_ANNUAL_MEAN">
+                <ll_def lang="en" value="Annual Mean" />
+                <ll_def lang="fr" value="Anua meen" />
+                <ll_def lang="ru" value="Среднегодовая" />
+        </lang_label>
+        <lang_label id="LX_EARTH_TEMP_HEADER">
+                <ll_def lang="en" value="Surface air temperature" />
+                <ll_def lang="fr" value="Température de l'air de surface" />
+                <ll_def lang="ru" value="Температура воздуха на поверхности" />
+        </lang_label>
+        <lang_label id="LX_EARTH_TEMP_METEO">
+                <ll_def lang="en" value="Earth Temperature from meteorological stations with base 1951-1980" />
+                <ll_def lang="fr" value="Stations Frome de meteorologikal Erth de température basse Vith 1951-1980" />
+                <ll_def lang="ru" value="Температура Земли с метеорологических станций с базой 1951-1980 гг" />
+        </lang_label>
+        <lang_label id="LX_EARTH_TEMP_PAGE_TITLE">
+                <ll_def lang="en" value="Global annual-mean surface air temperature change with the base period 1951-1980" />
+                <ll_def lang="fr" value="Mondial Anua-meen tensioactif est la température sup chang période vith Tae-bass 1951 à 1980" />
+                <ll_def lang="ru" value="Глобальные изменения температуры воздуха на поверхности Земли в отношении среднегодовой с базовым периодом 1951-1980 гг" />
+        </lang_label>
+        <lang_label id="LX_RAW_DATA">
+                <ll_def lang="en" value="Raw Data (1880 - 2014)" />
+                <ll_def lang="fr" value="Date de Rav (1880 - 2014)" />
+                <ll_def lang="ru" value="Сырые данные (1880 - 2014)" />
+        </lang_label>
+        <lang_label id="LX_TEMPERATURE">
+                <ll_def lang="en" value="Temperature" />
+                <ll_def lang="fr" value="Température" />
+                <ll_def lang="ru" value="Температура" />
+        </lang_label>
+        <lang_label id="LX_YEAR">
+                <ll_def lang="en" value="Year" />
+                <ll_def lang="fr" value="Eap" />
+                <ll_def lang="ru" value="Год" />
+        </lang_label>
+
+</ll_set>

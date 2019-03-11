@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OsBiTools Demo</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="err_net_not_available">ERROR - Network is not available</string>
+    <string name="err_net_not_connected">ERROR - Network is not connected</string>
+    <string name="action_sign_out">Sign Out</string>
+
+    <string name="world_population_facts">Some facts on world population</string>
+    <string name="earth_temp_1880_2014">Global air Earth temperature 1880-2014</string>
+
+    <string name="project_list">Project List</string>
+    <string name="wp_list">Web Pages</string>
+</resources>

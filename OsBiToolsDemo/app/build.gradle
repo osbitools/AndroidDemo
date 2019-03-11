@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId 'com.osbitools.android.demo'
+        minSdkVersion 10
+        targetSdkVersion 23
+        versionCode 1
+        versionName "0.1"
+    }
+    signingConfigs {
+        release {
+            storeFile file("../../../keystore.jks")
+            storePassword System.getenv("KEYSTOREPWD")
+            keyPassword System.getenv("KEYPWD")
+            keyAlias 'ivalab'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    output.outputFile = new File(output.outputFile.parent,
+                            output.outputFile.name.replace("app-release.apk",
+                                    "osbitools-demo_" + versionName + ".apk"))
+                }
+            }
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    // compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile project(':MPChartLib')
+    // compile 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    // compile files('libs/mpandroidchartlibrary-2-2-4.jar')
+    compile 'net.danlew:android.joda:2.9.3'
+}

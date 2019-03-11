@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.osbitools.com/xsd/wp.xsd" ver_max="1" ver_min="0" descr="Line chart only with meteorological data" inc="2" title="LX_5YEAR_MEAN" charset="utf-8" copyright="2016 - OsBiTools Demo">
+	<panels>
+		<panel>
+			<wwg_cont uid="1" idx="0" class_name="com.osbitools.containers.tab_box">
+				<props>
+					<prop name="id" value="com_osbitools_containers_tab_box_1" />
+					<prop name="header_title" value="LX_EARTH_TEMP_HEADER" />
+					<prop name="header_icon" value="earth_thermometer.png" />
+				</props>
+				<wwg_list>
+					<wwg_chart uid="2" idx="0" class_name="com.osbitools.charts.jqplot.line" engine="jqplot">
+						<props>
+							<prop name="id" value="com_osbitools_charts_jqplot_line_2" />
+							<prop name="size_width" value="420" />
+							<prop name="size_height" value="350" />
+							<prop name="ds" value="earth_temperature.global_air" />
+							<prop name="is_animate" value="true" />
+							<prop name="x_axis" value="YEAR" />
+							<prop name="x_axis_fmt" value="%Y" />
+							<prop name="x_axis_label" value="LX_YEAR" />
+							<prop name="y_axis_label" value="LX_TEMPERATURE" />
+							<prop name="is_show_legend" value="true" />
+						</props>
+						<prop_groups>
+							<prop_group name="series">
+								<props>
+									<prop name="label" value="LX_ANNUAL_MEAN" />
+									<prop name="y_axis" value="ANNUAL_MEAN" />
+								</props>
+								<props>
+									<prop name="label" value="LX_5YEAR_MEAN" />
+									<prop name="y_axis" value="5YEAR_MEAN" />
+								</props>
+							</prop_group>
+						</prop_groups>
+					</wwg_chart>
+				</wwg_list>
+			</wwg_cont>
+		</panel>
+	</panels>
+</wp>
